@@ -1,0 +1,39 @@
+# Microservices with Spring Boot
+
+This project demonstrates the implementation of a microservices architecture using **Spring Boot** and **Docker**. It includes service discovery, API Gateway routing, data persistence, API documentation with OpenAPI, and reactive programming.
+
+> ⚠️ This is a work in progress. Updates are made regularly.
+
+---
+
+## Services Overview
+
+| Service           | Description                                 | Port  |
+|-------------------|---------------------------------------------|-------|
+| Discovery Service | Eureka server for service registry          | 8761  |
+| API Gateway       | Routes requests to microservices            | 8080  |
+| Product Service   | Handles product-related operations          | 8081  |
+| Order Service     | Manages customer orders                     | 8082  |
+| User Service      | Manages users and (future) authentication   | 8083  |
+
+---
+
+## Technologies Used
+
+- Java 17
+- Spring Boot
+- Spring Cloud (Eureka, Gateway)
+- Spring Data JPA
+- PostgreSQL
+- Docker & Docker Compose
+- OpenAPI / Swagger
+- Spring WebFlux (Reactive programming)
+
+---
+
+## Running the Project
+
+You can run the full stack with Docker Compose:
+
+```bash
+docker-compose up --build
